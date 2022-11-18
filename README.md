@@ -36,7 +36,7 @@ https://user-images.githubusercontent.com/59060246/128050994-17f46934-6604-4430-
 # Install
 
 ```
-git clone https://github.com/siduck/chadwm --depth 1  ~/.config
+git clone https://github.com/siduck/chadwm --depth 1  ~/.config/chadwm
 cd ~/.config/chadwm/
 mv eww ~/.config
 sudo make install
@@ -109,12 +109,7 @@ cp -r ~/.config/chadwm/eww ~/.config/
 ```
 eww open eww
 ```
-
-- If you use alsa to manage your audio, instead of pulseaudio or pipewire, you can also launch an alsa widget:
-
-```
-eww open alsa-gui
-```
+(Note: I use only alsa on my system so audio scripts on widget are alsa related, modify them to support pulseaudio)
 
 - It could be a good idea to add these lines to your autostart file, located at ~/.config/chadwm/scripts/run.sh
 
